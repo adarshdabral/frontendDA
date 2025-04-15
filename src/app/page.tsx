@@ -39,7 +39,7 @@ export default function HomePage() {
 
     try {
       // Send the data to the server
-      const response = await fetch('https://backend-da-8oyk.vercel.app/', {
+      const response = await fetch('https://backend-da-8oyk.vercel.app/generate-description', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
