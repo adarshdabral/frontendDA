@@ -39,7 +39,7 @@ export default function HomePage() {
 
     try {
       // Send the data to the server
-      const response = await fetch('http://localhost:8000/generate-description', {
+      const response = await fetch('https://backendda.onrender.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
