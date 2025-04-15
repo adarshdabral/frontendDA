@@ -16,7 +16,7 @@ export default function UploadPage() {
     photos.forEach((photo) => formData.append('photos', photo))
     formData.append('answers', JSON.stringify(answers))
 
-    const res = await fetch('http://localhost:8000/generate-description', {
+    const res = await fetch('https://backend-da-8oyk.vercel.app/', {
       method: 'POST',
       body: formData,
     })
